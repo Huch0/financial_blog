@@ -20,11 +20,14 @@ export default function App({ Component, pageProps }) {
     <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
       <Head>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <meta name="google-site-verification" content="7qT4rhbv7-1MHpQmik1tnIdtJ1ciJGdo4NA2RFY7wJE" />
+        <meta
+          name="google-site-verification"
+          content="7qT4rhbv7-1MHpQmik1tnIdtJ1ciJGdo4NA2RFY7wJE"
+        />
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6420001201232822"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         ></script>
       </Head>
       {isDevelopment && isSocket && <ClientReload />}
