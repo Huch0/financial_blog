@@ -1,13 +1,13 @@
-import { useEffect, useState } from 'react';
-import siteMetadata from '@/data/siteMetadata';
+import { useEffect, useState } from 'react'
+import siteMetadata from '@/data/siteMetadata'
 
 const ShareBtn = ({ title, summary, url }) => {
-  const [isShareSupported, setIsShareSupported] = useState(false);
+  const [isShareSupported, setIsShareSupported] = useState(false)
 
   useEffect(() => {
     // 브라우저가 window.navigator.share 메서드를 지원하는지 체크
-    setIsShareSupported(window.navigator.share ? true : false);
-  }, []);
+    setIsShareSupported(window.navigator.share ? true : false)
+  }, [])
 
   const handleShareBtnClick = async () => {
     try {
@@ -16,23 +16,23 @@ const ShareBtn = ({ title, summary, url }) => {
           title: title,
           text: summary,
           url: url,
-        });
-        console.log('공유 성공');
+        })
+        console.log('공유 성공')
       } else {
         // window.navigator.share 메서드를 지원하지 않는 경우 클립보드에 복사
-        await navigator.clipboard.writeText(`${url}`);
-        alert('클립보드에 복사되었습니다.');
+        await navigator.clipboard.writeText(`${url}`)
+        alert('클립보드에 복사되었습니다.')
       }
     } catch (e) {
-      console.log('공유 실패');
-      console.error(e);
+      console.log('공유 실패')
+      console.error(e)
     }
-  };
+  }
 
   return (
     // 버튼을 화면에 보여줌
     <button
-      className="sharebtn relative z-10 flex rounded-md border bg-white p-2 opacity-80 hover:opacity-100 hover:text-lg focus:border-blue-400 focus:outline-none"
+      className="sharebtn relative z-10 flex rounded-md border bg-white p-2 opacity-80 hover:text-lg hover:opacity-100 focus:border-blue-400 focus:outline-none"
       onClick={handleShareBtnClick}
       aria-label="Share this post"
       type="button"
@@ -49,7 +49,7 @@ const ShareBtn = ({ title, summary, url }) => {
         ></path>
       </svg>
     </button>
-  );
-};
+  )
+}
 
-export default ShareBtn;
+export default ShareBtn
