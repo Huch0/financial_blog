@@ -95,7 +95,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 <ShareBtn
                   title={title}
                   summary={summary}
-                  url={`${siteMetadata.siteUrl}/blog/${slug}`}
+                  url={`${siteMetadata.siteUrl}blog/${slug}`}
                 />
               </div>
             </div>

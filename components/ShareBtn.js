@@ -32,7 +32,7 @@ const ShareBtn = ({ title, summary, url }) => {
   return (
     // 버튼을 화면에 보여줌
     <button
-      className="sharebtn relative z-10 flex rounded-md border bg-white p-2 opacity-80 hover:text-lg hover:opacity-100 focus:border-blue-400 focus:outline-none"
+      className="sharebtn relative z-10 flex rounded-md border p-2 opacity-80 hover:text-lg hover:opacity-100 focus:border-blue-400 focus:outline-none"
       onClick={handleShareBtnClick}
       aria-label="Share this post"
       type="button"
