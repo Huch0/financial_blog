@@ -91,11 +91,14 @@ export default function Home({ posts }) {
           </Link>
         </div>
       )}
-      {siteMetadata.newsletter.provider !== '' && (
-        <div className="flex items-center justify-center pt-4">
-          <NewsletterForm />
-        </div>
-      )}
+      
     </>
   )
 }
+/* 94번 줄에 있었던 이메일 구독 기능
+{siteMetadata.newsletter.provider !== '' && (
+  <div className="flex items-center justify-center pt-4">
+    <NewsletterForm />
+  </div>
+)}
+*/
