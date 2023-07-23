@@ -6,17 +6,13 @@ const siteMetadata = {
     '금융 상식을 차근차근 알려주는 블로그입니다. 투자, 저축, 보험 등 다양한 금융에 대한 정보를 제공합니다.',
   language: 'ko',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  siteUrl: 'https://financial-blog-one.vercel.app/',
+  siteRepo: 'https://github.com/Huch0/financial_blog',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'address@yoursite.com',
-  github: 'https://github.com',
-  twitter: 'https://twitter.com/Twitter',
-  facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
+  github: 'https://github.com/Huch0',
+  linkedin: 'https://www.linkedin.com/in/huch-0-b05a13231/',
   locale: 'ko-KR',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
@@ -25,7 +21,7 @@ const siteMetadata = {
     plausibleDataDomain: '', // e.g. tailwind-nextjs-starter-blog.vercel.app
     simpleAnalytics: false, // true or false
     umamiWebsiteId: '', // e.g. 123e4567-e89b-12d3-a456-426614174000
-    googleAnalyticsId: '', // e.g. UA-000000-2 or G-XXXXXXX
+    googleAnalyticsId: 'G-PFLL987N45', // e.g. UA-000000-2 or G-XXXXXXX
     posthogAnalyticsId: '', // posthog.init e.g. phc_5yXvArzvRdqtZIsHkEm3Fkkhm3d0bEYUXCaFISzqPSQ
   },
   newsletter: {
