@@ -6,7 +6,7 @@ const siteMetadata = {
     '금융 상식을 차근차근 알려주는 블로그입니다. 투자, 저축, 보험 등 다양한 금융에 대한 정보를 제공합니다.',
   language: 'ko',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://financial-blog-one.vercel.app/',
+  siteUrl: 'https://financial-blog-one.vercel.app',
   siteRepo: 'https://github.com/Huch0/financial_blog',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
