@@ -24,6 +24,7 @@ export default function App({ Component, pageProps }) {
           name="google-site-verification"
           content="7qT4rhbv7-1MHpQmik1tnIdtJ1ciJGdo4NA2RFY7wJE"
         />
+        <meta name="naver-site-verification" content="2f466fc4183a502968b5d5a820e77593649b9e2f" />
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6420001201232822"
