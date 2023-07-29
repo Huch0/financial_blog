@@ -33,7 +33,9 @@ export default function WikiLayout({ wikis, selectedWiki }) {
               <li
                 key={wiki.title}
                 className={`mb-2 ${
-                  wiki.slug === selectedWiki ? 'bg-blue-50 text-blue-500 dark:text-white dark:bg-gray-600   ' : 'hover:bg-gray-100 dark:hover:bg-indigo-500'
+                  wiki.slug === selectedWiki
+                    ? 'bg-blue-50 text-blue-500 dark:bg-gray-600 dark:text-white   '
+                    : 'hover:bg-gray-100 dark:hover:bg-indigo-500'
                 }`}
               >
                 <Link href={`/wikis/${wiki.slug}`} className="block py-2 px-4">

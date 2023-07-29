@@ -28,7 +28,7 @@ const WikiPageLayout = ({ frontMatter, authorDetails, wikis, selectedWiki, child
       />
       <ScrollTopAndComment />
       <div className="mt-10 flex flex-wrap">
-        <div className="w-full sm:w-1/4 max-h-30 sm:max-h-none overflow-y-auto">
+        <div className="max-h-30 sm:max-h-none w-full overflow-y-auto sm:w-1/4">
           <WikiLayout wikis={wikis} selectedWiki={selectedWiki} />
         </div>
         <article className="w-full px-5 sm:w-3/4">
