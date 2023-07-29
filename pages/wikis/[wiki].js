@@ -24,7 +24,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const wikis = await getAllFilesFrontMatter('wikis')
-  console.log('params', params)
+  //console.log('params', params)
 
   const wiki = await getFileBySlug('wikis', params.wiki)
   const authorList = wiki.frontMatter.authors || ['default']
@@ -38,11 +38,11 @@ export async function getStaticProps({ params }) {
 }
 
 export default function Wiki({ wikis, wiki, authorDetails }) {
-  const selectedWiki = wiki.slug
   const { mdxSource, toc, frontMatter } = wiki
+  const selectedWiki = frontMatter.slug
 
-  console.log('\nwiki.slug = ', wiki.slug)
-  console.log('selected one = ', selectedWiki)
+  //console.log('\nfrontmatter = ', frontMatter)
+  //console.log('selected one = ', selectedWiki)
 
   return (
     <>
