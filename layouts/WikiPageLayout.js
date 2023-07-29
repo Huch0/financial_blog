@@ -15,10 +15,6 @@ const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day:
 const WikiPageLayout = ({ frontMatter, authorDetails, wikis, selectedWiki, children }) => {
   const { slug, fileName, date, title, summary, images, tags } = frontMatter
 
-  const handleArrowClick = () => {
-    setTagVisible(!isTagVisible)
-  }
-
   return (
     <SectionContainer>
       <BlogSEO
